@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Inter;
+    src: url(assets/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: Inter;
+    color: white;
+    margin:0;
+    min-height: 100vh;
+}
+
+.btn {
+    width: 150px;
+    font-size: 1rem;
+    padding:1rem;
+    color: rgb(183, 183, 183);
+    border: 1px solid rgb(183, 183, 183);
+    text-transform:uppercase;
+    font-weight: 500;
+    position:relative;
+    background:transparent;
+    cursor:pointer;
+    margin-top: 2rem;
+}
+.btn::after {
+    content: "";
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top: 7px;
+    left: 7px;
+    z-index:-1;
+    position:absolute;
+    background-color:#8B0000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul, li {
+    list-style-type: none;
+    padding:0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.listitem {
+    padding-bottom:0;
+    padding-left: 1em;
+    list-style-type:circle;
+}
+
+hr.solid {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1em;
+}
+
+#selfie {
+    border-radius: 100%;
+    margin-right: 3rem;
+}
+
+#circle {
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 100%;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align:center;
+    text-transform: uppercase;
+
+}
+
+header {
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    background-color: rgb(31, 31, 31);
+    position:sticky;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    border-bottom: 5px solid black;
+}
+
+.navitem {
+    padding:1em;
+}
+.navitem a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navitem a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.whitebox, .greybox, .content, .aboutme {
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.somes {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:1rem;
+}
+.someitem {
+    padding: 10px;
+}
+
+.flexitem {
+    text-align:center;
+}
+
+.flexitem2 {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.codebox {
+    max-width: 700px;
+    width: auto;
+    padding:5px;
+    height: 200px;
+    overflow-y:auto;
+    background-color: grey;
+    color:black;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.aboutme {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.whitebox {
+    background:rgb(224, 224, 224);
+    color: black;
+    flex-direction: column;
+}
+.greybox {
+    background: rgb(31, 31, 31);
+    color: rgb(224, 224, 224);
+    flex-direction: column;
+}
